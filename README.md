@@ -1,1 +1,0 @@
-# akuihamuotila.github.io
