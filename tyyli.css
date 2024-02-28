@@ -14,7 +14,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fontin määrittely */
   line-height: 1.6; /* Rivivälin määrittely */
   color: #333; /* Tekstin väri */
-  background-color: #f4f4f4; /* Taustan väri */
+  background-color: #ff00bb; /* Taustan väri */
   padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
   margin: 0; /* Ulkoinen tyhjä tila */
 }
