@@ -1,64 +1,69 @@
 /* Peruselementtien nollaus */
-body, h1, h2, p, nav, footer {
-    margin: 0;
-    padding: 0;
+body,
+h1,
+h2,
+p,
+nav,
+footer {
+  margin: 0;
+  padding: 0;
 }
 
 /* Kehon (body) perustyylit */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fontin määrittely */
-    line-height: 1.6; /* Rivivälin määrittely */
-    color: #333; /* Tekstin väri */
-    background-color: #f4f4f4; /* Taustan väri */
-    padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
-    margin: 0; /* Ulkoinen tyhjä tila */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fontin määrittely */
+  line-height: 1.6; /* Rivivälin määrittely */
+  color: #333; /* Tekstin väri */
+  background-color: #f4f4f4; /* Taustan väri */
+  padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
+  margin: 0; /* Ulkoinen tyhjä tila */
 }
 
 /* Ylätunnisteen (header) tyylit */
 header {
-    background: #005A9C; /* Taustaväri */
-    color: #ffffff; /* Tekstin väri */
-    padding: 20px; /* Sisäinen tyhjä tila */
-    text-align: center; /* Tekstin tasaus keskelle */
+  background: #005a9c; /* Taustaväri */
+  color: #ffffff; /* Tekstin väri */
+  padding: 20px; /* Sisäinen tyhjä tila */
+  text-align: center; /* Tekstin tasaus keskelle */
 }
 
 /* Navigointipalkin tyylit */
 nav {
-    display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
-    justify-content: center; /* Tasaa linkit keskelle */
-    background: #333; /* Taustaväri */
+  display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
+  justify-content: center; /* Tasaa linkit keskelle */
+  background: #333; /* Taustaväri */
 }
 
 nav a {
-    color: white; /* Linkkien tekstiväri */
-    padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
-    text-decoration: none; /* Poistaa linkkien alleviivauksen */
+  color: white; /* Linkkien tekstiväri */
+  padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
+  text-decoration: none; /* Poistaa linkkien alleviivauksen */
 }
 
 nav a:hover {
-    background: #ddd; /* Linkkien taustaväri kun hiiri on päällä */
-    color: #333; /* Tekstin väri kun hiiri on linkin päällä */
+  background: #ddd; /* Linkkien taustaväri kun hiiri on päällä */
+  color: #333; /* Tekstin väri kun hiiri on linkin päällä */
 }
 
 /* Pääsisällön (content) tyylit */
 .content {
-    padding: 20px; /* Sisäinen tyhjä tila */
-    background: white; /* Taustaväri */
-    margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
+  padding: 20px; /* Sisäinen tyhjä tila */
+  background: white; /* Taustaväri */
+  margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
 }
 
 /* Alatunnisteen (footer) tyylit */
 footer {
-    background: #005A9C; /* Taustaväri */
-    color: white; /* Tekstin väri */
-    text-align: center; /* Tekstin tasaus keskelle */
-    padding: 10px; /* Sisäinen tyhjä tila */
-    margin-top: 20px; /* Ulkoinen tyhjä tila yläpuolella */
+  background: #005a9c; /* Taustaväri */
+  color: white; /* Tekstin väri */
+  text-align: center; /* Tekstin tasaus keskelle */
+  padding: 10px; /* Sisäinen tyhjä tila */
+  margin-top: 20px; /* Ulkoinen tyhjä tila yläpuolella */
 }
 
 /* Apuluokat */
 .container {
-    max-width: 1100px; /* Maksimileveys */
-    margin: auto; /* Keskitetään automaattisesti */
-    overflow: hidden; /* Piilottaa ylittävän sisällön */
+  max-width: 1100px; /* Maksimileveys */
+  margin: auto; /* Keskitetään automaattisesti */
+  overflow: hidden; /* Piilottaa ylittävän sisällön */
 }
