@@ -13,16 +13,16 @@ footer {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fontin määrittely */
   line-height: 1.6; /* Rivivälin määrittely */
-  color: #333; /* Tekstin väri */
-  background-color: #ff00bb; /* Taustan väri */
+  color: #000080; /* Tekstin väri */
+  background-color: #ffffff; /* Taustan väri */
   padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
   margin: 0; /* Ulkoinen tyhjä tila */
 }
 
 /* Ylätunnisteen (header) tyylit */
 header {
-  background: #005a9c; /* Taustaväri */
-  color: #ffffff; /* Tekstin väri */
+  background: #87ceeb; /* Taustaväri */
+  color: #000080; /* Tekstin väri */
   padding: 20px; /* Sisäinen tyhjä tila */
   text-align: center; /* Tekstin tasaus keskelle */
 }
@@ -31,18 +31,18 @@ header {
 nav {
   display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
   justify-content: center; /* Tasaa linkit keskelle */
-  background: #333; /* Taustaväri */
+  background: #87ceeb; /* Taustaväri */
 }
 
 nav a {
-  color: white; /* Linkkien tekstiväri */
+  color: #000080; /* Linkkien tekstiväri */
   padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
   text-decoration: none; /* Poistaa linkkien alleviivauksen */
 }
 
 nav a:hover {
-  background: #ddd; /* Linkkien taustaväri kun hiiri on päällä */
-  color: #333; /* Tekstin väri kun hiiri on linkin päällä */
+  background: #000080; /* Linkkien taustaväri kun hiiri on päällä */
+  color: #87ceeb; /* Tekstin väri kun hiiri on linkin päällä */
 }
 
 /* Pääsisällön (content) tyylit */
@@ -54,8 +54,8 @@ nav a:hover {
 
 /* Alatunnisteen (footer) tyylit */
 footer {
-  background: #005a9c; /* Taustaväri */
-  color: white; /* Tekstin väri */
+  background: #87ceeb; /* Taustaväri */
+  color: #000080; /* Tekstin väri */
   text-align: center; /* Tekstin tasaus keskelle */
   padding: 10px; /* Sisäinen tyhjä tila */
   margin-top: 20px; /* Ulkoinen tyhjä tila yläpuolella */
