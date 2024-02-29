@@ -1,17 +1,28 @@
 /* Peruselementtien nollaus */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 1. taso */
+}
+h2 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 2. taso */
+}
+h3 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 3. taso */
+}
+h4 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 4. taso */
+}
+h5 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 5. taso */
+}
 h6 {
-  font-family: "Merriweather", sans-serif; /* Otsikkofontit */
+  font-family: "Merriweather", sans-serif; /* Otsikkofontti 6. taso*/
 }
 p {
   font-family: "Roboto", sans-serif; /* Kappalefontit */
 }
-nav,
+nav {
+    font-family: "Merriweather", sans-serif; /* Valikkofontti */
+  }
 footer {
   margin: 0;
   padding: 0;
