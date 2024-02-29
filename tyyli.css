@@ -1,11 +1,16 @@
 /* Peruselementtien nollaus */
 body,
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', sans-serif; /* Otsikkofontit */
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", sans-serif; /* Otsikkofontit */
+}
 p {
-    font-family: 'Roboto', sans-serif; /* Kappalefontit */
-  }
+  font-family: "Roboto", sans-serif; /* Kappalefontit */
+}
 nav,
 footer {
   margin: 0;
@@ -45,6 +50,11 @@ nav a {
 nav a:hover {
   background: #000080; /* Linkkien taustaväri kun hiiri on päällä */
   color: #87ceeb; /* Tekstin väri kun hiiri on linkin päällä */
+}
+
+#valittu {
+  background: #000080; /* Linkkien taustaväri kun sivu on valittu */
+  color: #87ceeb; /* Tekstin väri kun sivu on valittu */
 }
 
 /* Pääsisällön (content) tyylit */
