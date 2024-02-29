@@ -56,6 +56,7 @@ nav {
   display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
   justify-content: center; /* Tasaa linkit keskelle */
   background: #87ceeb; /* Taustaväri */
+  font-size: x-large; /* Nappien fonttikoko suuremmaksi */
 }
 
 nav a {
