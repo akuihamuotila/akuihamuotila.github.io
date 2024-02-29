@@ -1,8 +1,11 @@
 /* Peruselementtien nollaus */
 body,
-h1,
-h2,
-p,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', sans-serif; /* Otsikkofontit */
+  }
+p {
+    font-family: 'Roboto', sans-serif; /* Kappalefontit */
+  }
 nav,
 footer {
   margin: 0;
@@ -11,7 +14,6 @@ footer {
 
 /* Kehon (body) perustyylit */
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fontin määrittely */
   line-height: 1.6; /* Rivivälin määrittely */
   color: #000080; /* Tekstin väri */
   background-color: #ffffff; /* Taustan väri */
