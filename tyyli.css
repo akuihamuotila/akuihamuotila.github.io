@@ -28,8 +28,10 @@ footer {
   padding: 0;
 }
 
-.center {
-  text-align: center; /* Auttaa asettamaan asioita sivun keskelle tarvittaessa */
+.center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Kehon (body) perustyylit */
