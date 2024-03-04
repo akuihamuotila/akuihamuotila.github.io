@@ -7,7 +7,7 @@ h2 {
 }
 h3 {
   font-family: "Merriweather", sans-serif; /* Otsikkofontti 3. taso */
-  font-size: xx-large;
+  font-size: xx-large; /* Suurentaa fontin kokoa */
 }
 h4 {
   font-family: "Merriweather", sans-serif; /* Otsikkofontti 4. taso */
