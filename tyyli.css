@@ -98,30 +98,27 @@ footer {
   overflow: hidden; /* Piilottaa ylittävän sisällön */
 }
 
-* {
-  box-sizing: border-box; /* Sisällyttää paddingin ja borderin elementin kokoon */
-}
-
 .grid-container {
-  display: grid; /* Asettaa säiliön ruudukkoasettelulle */
-  grid-template-columns: 1fr 3fr 1fr; /* Luo kolme saraketta käyttäen fraktioita tilan jakamiseen */
-  grid-template-rows: auto 1fr auto; /* Luo rivit, joiden korkeus määritetään automaattisesti tai fraktioilla */
-  grid-template-areas:
-    "header header header"
-    "menu main right"
-    "footer footer footer"; /* Nimetään ruudukkoalueet helpottamaan elementtien sijoittelua */
-  height: 100vh; /* Asettaa säiliön korkeuden selaimen ikkunan korkeudeksi */
+  display: grid; /* Käytetään grid-asettelua */
+  grid-template-columns: 1fr 1fr; /* Kaksi samankokoista saraketta */
+  gap: 20px; /* Väli sarakkeiden välillä */
+  justify-content: center; /* Keskittää ruudukon keskelle sivua, jos sivulla on tilaa */
+  align-content: center; /* Keskittää ruudukon pystysuunnassa */
+  margin: 20px; /* Antaa hieman tilaa ruudukon ympärille */
+  max-width: 900px; /* Maksimileveys ruudukolle */
+  height: auto; /* Korkeus määräytyy sisällön mukaan */
+  margin-top: 50px; /* Tilaa headerin alapuolelle */
+  margin-bottom: 50px; /* Tilaa ennen footeria */
 }
 
-/* Responsiivisuus pienille näytöille */
-@media (max-width: 768px) {
+.left-column, .right-column {
+  background: #f0f0f0; /* Väritys sarakkeille */
+  padding: 20px; /* Sisätila sarakkeiden sisällölle */
+}
+
+/* Voit lisätä responsiivisuutta tarvittaessa */
+@media (max-width: 600px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Pienillä näytöillä asetetaan kaikki elementit pinoon yhteen sarakkeeseen */
-    grid-template-areas:
-      "header"
-      "menu"
-      "main"
-      "right"
-      "footer"; /* Määritellään uudelleen ruudukkoalueet pystysuuntaiseen pinoamiseen pienillä näytöillä */
+    grid-template-columns: 1fr; /* Pienillä näytöillä yksi sarake */
   }
 }
