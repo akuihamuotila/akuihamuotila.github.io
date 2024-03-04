@@ -63,6 +63,7 @@ nav a {
   color: #000080; /* Linkkien tekstiväri */
   padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
   text-decoration: none; /* Poistaa linkkien alleviivauksen */
+  outline: 2px solid #000080; /* Linkkien reunojen väri */
 }
 
 nav a:hover {
@@ -106,7 +107,8 @@ footer {
   margin: 0 auto; /* Keskittää gridin horisontaalisesti sivulle asettamalla automaattisen marginaalin molemmin puolin */
 }
 
-.left-column, .right-column {
+.left-column,
+.right-column {
   padding: 20px; /* Asetetaan padding sarakkeille, jotta sisältö ei ole aivan kiinni reunassa */
   background: #ffffff; /* Taustaväri helpottamaan erottamista */
 }
