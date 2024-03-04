@@ -98,27 +98,22 @@ footer {
   overflow: hidden; /* Piilottaa ylittävän sisällön */
 }
 
-.grid-container {
-  display: grid; /* Käytetään grid-asettelua */
-  grid-template-columns: 1fr 1fr; /* Kaksi samankokoista saraketta */
-  gap: 20px; /* Väli sarakkeiden välillä */
-  justify-content: center; /* Keskittää ruudukon keskelle sivua, jos sivulla on tilaa */
-  align-content: center; /* Keskittää ruudukon pystysuunnassa */
-  margin: 20px; /* Antaa hieman tilaa ruudukon ympärille */
-  max-width: 900px; /* Maksimileveys ruudukolle */
-  height: auto; /* Korkeus määräytyy sisällön mukaan */
-  margin-top: 50px; /* Tilaa headerin alapuolelle */
-  margin-bottom: 50px; /* Tilaa ennen footeria */
+.content-grid {
+  display: grid; /* Asetetaan tämä div-elementti käyttämään grid-asettelua */
+  grid-template-columns: 1fr 1fr; /* Jaetaan tila kahteen yhtä suureen sarakkeeseen */
+  gap: 20px; /* Asetetaan sarakkeiden väliin tilaa */
+  max-width: 900px; /* Asetetaan maksimileveys koko gridille */
+  margin: 0 auto; /* Keskittää gridin horisontaalisesti sivulle asettamalla automaattisen marginaalin molemmin puolin */
 }
 
 .left-column, .right-column {
-  background: #f0f0f0; /* Väritys sarakkeille */
-  padding: 20px; /* Sisätila sarakkeiden sisällölle */
+  padding: 20px; /* Asetetaan padding sarakkeille, jotta sisältö ei ole aivan kiinni reunassa */
+  background: #f0f0f0; /* Taustaväri helpottamaan erottamista */
 }
 
-/* Voit lisätä responsiivisuutta tarvittaessa */
+/* Responsiivisuutta varten */
 @media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* Pienillä näytöillä yksi sarake */
+  .content-grid {
+    grid-template-columns: 1fr; /* Asetetaan yksi sarake mobiilinäkymässä */
   }
 }
