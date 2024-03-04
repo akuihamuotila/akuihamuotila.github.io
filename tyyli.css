@@ -143,3 +143,17 @@ footer {
   background: #125688; /* Instagramin taustaväri */
   color: white;
 }
+
+button {
+  padding: 10px 20px; /* Lisää tilaa painikkeen ympärille */
+  background-color: #87ceeb; /* Asettaa painikkeen taustavärin */
+  color: #000080; /* Asettaa painikkeen tekstin värin */
+  outline: 2px solid #000080; /* Linkkien reunojen väri */
+  font-size: xx-large; /* Asettaa tekstin koon */
+}
+
+/* Määritellään tyylit painikkeelle, kun hiiri on sen päällä */
+button:hover {
+  background-color: #000080; /* Tummentaa taustavärin hiiren ollessa painikkeen päällä */
+  color: #87ceeb; /* Vaalentaa tekstin värin hiiren ollessa painikkeen päällä */
+}
