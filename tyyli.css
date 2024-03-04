@@ -97,3 +97,31 @@ footer {
   margin: auto; /* Keskitetään automaattisesti */
   overflow: hidden; /* Piilottaa ylittävän sisällön */
 }
+
+* {
+  box-sizing: border-box; /* Sisällyttää paddingin ja borderin elementin kokoon */
+}
+
+.grid-container {
+  display: grid; /* Asettaa säiliön ruudukkoasettelulle */
+  grid-template-columns: 1fr 3fr 1fr; /* Luo kolme saraketta käyttäen fraktioita tilan jakamiseen */
+  grid-template-rows: auto 1fr auto; /* Luo rivit, joiden korkeus määritetään automaattisesti tai fraktioilla */
+  grid-template-areas:
+    "header header header"
+    "menu main right"
+    "footer footer footer"; /* Nimetään ruudukkoalueet helpottamaan elementtien sijoittelua */
+  height: 100vh; /* Asettaa säiliön korkeuden selaimen ikkunan korkeudeksi */
+}
+
+/* Responsiivisuus pienille näytöille */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Pienillä näytöillä asetetaan kaikki elementit pinoon yhteen sarakkeeseen */
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "right"
+      "footer"; /* Määritellään uudelleen ruudukkoalueet pystysuuntaiseen pinoamiseen pienillä näytöillä */
+  }
+}
