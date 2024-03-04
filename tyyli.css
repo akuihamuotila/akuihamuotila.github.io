@@ -78,7 +78,7 @@ nav a:hover {
 /* Pääsisällön (content) tyylit */
 .content {
   padding: 20px; /* Sisäinen tyhjä tila */
-  background: white; /* Taustaväri */
+  background: #ffffff; /* Taustaväri */
   margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
 }
 
