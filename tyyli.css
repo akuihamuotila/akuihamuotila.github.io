@@ -49,6 +49,7 @@ header {
   color: #000080; /* Tekstin väri */
   padding: 20px; /* Sisäinen tyhjä tila */
   text-align: center; /* Tekstin tasaus keskelle */
+  margin-bottom: 20px; /* Ulkoinen tyhjä tila alapuolella */
 }
 
 /* Navigointipalkin tyylit */
@@ -64,6 +65,7 @@ nav a {
   padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
   text-decoration: none; /* Poistaa linkkien alleviivauksen */
   outline: 2px solid #000080; /* Linkkien reunojen väri */
+  margin: 6px; /* Tilaa nappien ympärille */
 }
 
 nav a:hover {
@@ -83,7 +85,7 @@ nav a:hover {
   margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
 }
 
-/* Alatunnisteen (footer) tyylit */
+/* Footerin tyylit */
 footer {
   background: #87ceeb; /* Taustaväri */
   color: #000080; /* Tekstin väri */
@@ -118,4 +120,26 @@ footer {
   .content-grid {
     grid-template-columns: 1fr; /* Asetetaan yksi sarake mobiilinäkymässä */
   }
+}
+
+.fa {
+  padding: 20px; /* Tyylit kaikille ikoneille footerissa */
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7; /* Hover efekti */
+}
+
+.fa-facebook {
+  background: #3b5998; /* Facebookin taustaväri */
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688; /* Instagramin taustaväri */
+  color: white;
 }
