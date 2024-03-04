@@ -145,7 +145,7 @@ footer {
 }
 
 button {
-  padding: 10px 20px; /* Lisää tilaa painikkeen ympärille */
+  padding: 100px 20px; /* Lisää tilaa painikkeen ympärille */
   background-color: #87ceeb; /* Asettaa painikkeen taustavärin */
   color: #000080; /* Asettaa painikkeen tekstin värin */
   outline: 2px solid #000080; /* Linkkien reunojen väri */
