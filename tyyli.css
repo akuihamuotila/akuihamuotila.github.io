@@ -160,40 +160,45 @@ button:hover {
   color: #87ceeb; /* Vaalentaa tekstin värin hiiren ollessa painikkeen päällä */
 }
 
-/* Tabletit */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Suuret näytöt */
-@media (min-width: 1025px) {
-  .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  nav {
-    justify-content: space-around;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 16px; /* Perusfonttikoko */
-  }
-  h1 {
-    font-size: 22px; /* Säätöö */
-  }
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-size: 20px; /* Säätöö */
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
 } /* Kuvien responsiivisuuden säätöö */
+
+/* Pienet näytöt, kuten matkapuhelimet */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column; /* Asetetaan navigointielementit pinoon pystysuoraan */
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr; /* Asetetaan kaikki sisältö yhteen sarakeeseen */
+  }
+
+  .nav a,
+  .fa {
+    display: block; /* Asettaa linkit ja sosiaalisen median ikonit omille riveilleen */
+    text-align: center; /* Keskittää tekstin */
+    margin: 10px 0; /* Lisää tilaa ylä- ja alapuolelle parempaa käytettävyyttä varten */
+  }
+}
+
+/* Tabletit */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Kaksi saraketta sisällölle parempaan näkymään */
+  }
+}
+
+/* Suuremmat näytöt, kuten pöytäkone */
+@media screen and (min-width: 1025px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr); /* Kaksi saraketta sisällölle */
+  }
+  nav {
+    justify-content: space-around; /* Tasaa navigointilinkit tasaisesti */
+  }
+}
