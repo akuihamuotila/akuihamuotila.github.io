@@ -159,3 +159,41 @@ button:hover {
   background-color: #000080; /* Tummentaa taustavärin hiiren ollessa painikkeen päällä */
   color: #87ceeb; /* Vaalentaa tekstin värin hiiren ollessa painikkeen päällä */
 }
+
+/* Tabletit */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Suuret näytöt */
+@media (min-width: 1025px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px; /* Perusfonttikoko */
+  }
+  h1 {
+    font-size: 22px; /* Säätöö */
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px; /* Säätöö */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} /* Kuvien responsiivisuuden säätöö */
