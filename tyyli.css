@@ -243,3 +243,24 @@ footer {
   color: #000080; /* Tekstin väri */
   text-align: center; /* Tekstin sijainti keskelle */
 }
+
+.footer-valikko {
+  display: flex;
+  justify-content: space-around; /* Asettaa sisällön keskelle, jaettuna kahteen osaan */
+  align-items: center;
+}
+
+.footer-nav,
+.footer-muu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav {
+  flex: 1; /* Antaa joustavuutta ja mahdollistaa tilan täyttämisen */
+}
+
+.footer-muu {
+  flex: 1; /* Sama tässä, tasapainottaa tilan käytön */
+}
