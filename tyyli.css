@@ -177,6 +177,7 @@ img {
   margin: 0; /* Nollaa marginaalin */
   background: #87ceeb; /* Taustaväri */
   width: fit-content; /* Asettaa leveyden sisällön mukaan ja pitää napit vasemmalla */
+  justify-content: center; /* Tasaa linkit keskelle */
 }
 
 .footer-nav a {
