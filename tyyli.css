@@ -241,4 +241,5 @@ footer {
   padding: 20px;
   background: #87ceeb; /* Taustaväri */
   color: #000080; /* Tekstin väri */
+  text-align: center; /* Tekstin sijainti keskelle */
 }
