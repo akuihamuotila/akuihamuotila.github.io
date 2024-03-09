@@ -60,15 +60,6 @@ header {
   margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
 }
 
-/* Footerin tyylit */
-footer {
-  background: #87ceeb; /* Taustaväri */
-  color: #000080; /* Tekstin väri */
-  text-align: center; /* Tekstin tasaus keskelle */
-  padding: 10px; /* Sisäinen tyhjä tila */
-  margin-top: 20px; /* Ulkoinen tyhjä tila yläpuolella */
-}
-
 /* Apuluokat */
 .container {
   max-width: 1100px; /* Maksimileveys */
@@ -182,7 +173,8 @@ img {
   display: flex;
   flex-direction: column; /* Asettaa napit pystysuuntaan */
   margin-right: auto; /* Työntää muun footerin sisällön oikealle */
-  padding: 10px 0; /* Lisää paddingia ylä- ja alapuolelle */
+  padding: 0; /* Nollaa paddingin */
+  margin: 0; /* Nollaa marginaalin */
   background: #87ceeb; /* Taustaväri */
   width: fit-content; /* Asettaa leveyden sisällön mukaan ja pitää napit vasemmalla */
 }
@@ -190,9 +182,9 @@ img {
 .footer-nav a {
   text-decoration: none; /* Poistaa nappien alleviivaukset */
   color: #000080; /* Asettaa tekstin värin */
-  padding: 5px 20px; /* Lisää paddingia jokaiselle linkille, muokattu leveyttä */
+  padding: 5px; /* Lisää paddingia jokaiselle linkille, muokattu leveyttä */
   outline: 2px solid #000080; /* Nappien reunojen väri */
-  display: block; /* Asettaa jokaisen linkin omalle rivilleen */
+  margin-right: 20px; /* Tilaa napin oikealle puolelle */
 }
 
 .footer-nav a:hover {
@@ -200,13 +192,17 @@ img {
   background: #000080; /* Napin taustan värin kun hiiri päällä */
 }
 
-/* Muokataan footer-osiota käyttämään flexboxia */
-footer {
-  display: flex; /* Asetetaan footer käyttämään flexboxia */
-  justify-content: space-between; /* Tasataan sisältö footerin sisällä */
-  align-items: center; /* Keskittää sisällön vertikaalisesti */
-  flex-wrap: wrap; /* Mahdollistaa sisällön käärittymisen tarvittaessa */
-  padding: 20px; /* Lisää paddingia footerin sisäpuolelle */
+/* Muut jutut navin kanssa samalle riville footerissa */
+.footer-info {
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  margin-right: 10px;
 }
 
 /* Headerin valikon jutut */
@@ -233,4 +229,15 @@ nav a:hover {
 #valittu {
   background: #000080; /* Nappien taustaväri kun sivu on valittu */
   color: #87ceeb; /* Tekstin väri kun sivu on valittu */
+}
+
+/* Footerin tyylit */
+footer {
+  display: flex; /* Asetetaan footer käyttämään flexboxia */
+  align-items: center; /* Keskittää alkiot vertikaalisesti */
+  justify-content: space-between; /* Jakaa tilan sisällön välillä tasaisesti */
+  flex-wrap: wrap; /* Mahdollistaa sisällön siirtymisen uudelle riville tarvittaessa */
+  padding: 20px;
+  background: #87ceeb; /* Taustaväri */
+  color: #000080; /* Tekstin väri */
 }
