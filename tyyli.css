@@ -256,11 +256,3 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-.footer-nav {
-  flex: 1; /* Antaa joustavuutta ja mahdollistaa tilan täyttämisen */
-}
-
-.footer-muu {
-  flex: 1; /* Sama tässä, tasapainottaa tilan käytön */
-}
