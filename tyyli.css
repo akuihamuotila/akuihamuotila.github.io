@@ -53,32 +53,6 @@ header {
   margin-bottom: 20px; /* Ulkoinen tyhjä tila alapuolella */
 }
 
-/* Navigointipalkin tyylit */
-nav {
-  display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
-  justify-content: center; /* Tasaa linkit keskelle */
-  background: #87ceeb; /* Taustaväri */
-  font-size: xx-large; /* Nappien fonttikoko suuremmaksi */
-}
-
-nav a {
-  color: #000080; /* Linkkien tekstiväri */
-  padding: 10px 15px; /* Linkkien sisäinen tyhjä tila */
-  text-decoration: none; /* Poistaa linkkien alleviivauksen */
-  outline: 2px solid #000080; /* Linkkien reunojen väri */
-  margin: 6px; /* Tilaa nappien ympärille */
-}
-
-nav a:hover {
-  background: #000080; /* Linkkien taustaväri kun hiiri on päällä */
-  color: #87ceeb; /* Tekstin väri kun hiiri on linkin päällä */
-}
-
-#valittu {
-  background: #000080; /* Linkkien taustaväri kun sivu on valittu */
-  color: #87ceeb; /* Tekstin väri kun sivu on valittu */
-}
-
 /* Pääsisällön (content) tyylit */
 .content {
   padding: 20px; /* Sisäinen tyhjä tila */
@@ -201,4 +175,50 @@ img {
   nav {
     justify-content: space-around; /* Tasaa navigointilinkit tasaisesti */
   }
+}
+
+/* footerin valikon jutut */
+.footer-nav {
+  display: flex;
+  flex-direction: column; /* Asettaa napit pystysuuntaan */
+  margin-right: auto; /* Työntää muun footerin sisällön oikealle */
+  padding: 10px 0; /* Lisää paddingia ylä- ja alapuolelle */
+  background: #87ceeb; /* Taustaväri */
+}
+
+.footer-nav a {
+  text-decoration: none; /* Poistaa nappien alleviivaukset */
+  color: #000080; /* Asettaa tekstin värin */
+  padding: 5px 0; /* Lisää paddingia jokaiselle linkille */
+  outline: 2px solid #000080; /* Nappien reunojen väri */
+}
+
+.footer-nav a:hover {
+  color: #87ceeb; /* tekstin väri kun hiiri on napin päällä */
+  background: #000080; /* napin taustan värin kun hiiri päällä */
+}
+/* Headerin valikon jutut */
+nav {
+  display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
+  justify-content: center; /* Tasaa linkit keskelle */
+  background: #87ceeb; /* Taustaväri */
+  font-size: xx-large; /* Nappien fonttikoko suuremmaksi */
+}
+
+nav a {
+  color: #000080; /* Nappien tekstiväri */
+  padding: 10px 15px; /* Napiien sisäinen tyhjä tila */
+  text-decoration: none; /* Poistaa nappien alleviivauksen */
+  outline: 2px solid #000080; /* Nappien reunojen väri */
+  margin: 6px; /* Tilaa nappien ympärille */
+}
+
+nav a:hover {
+  background: #000080; /* Nappien taustaväri kun hiiri on päällä */
+  color: #87ceeb; /* Tekstin väri kun hiiri on napin päällä */
+}
+
+#valittu {
+  background: #000080; /* Nappien taustaväri kun sivu on valittu */
+  color: #87ceeb; /* Tekstin väri kun sivu on valittu */
 }
