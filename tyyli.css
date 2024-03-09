@@ -184,19 +184,22 @@ img {
   margin-right: auto; /* Työntää muun footerin sisällön oikealle */
   padding: 10px 0; /* Lisää paddingia ylä- ja alapuolelle */
   background: #87ceeb; /* Taustaväri */
+  width: fit-content; /* Asettaa leveyden sisällön mukaan ja pitää napit vasemmalla */
 }
 
 .footer-nav a {
   text-decoration: none; /* Poistaa nappien alleviivaukset */
   color: #000080; /* Asettaa tekstin värin */
-  padding: 5px 0; /* Lisää paddingia jokaiselle linkille */
+  padding: 5px 20px; /* Lisää paddingia jokaiselle linkille, muokattu leveyttä */
   outline: 2px solid #000080; /* Nappien reunojen väri */
+  display: block; /* Asettaa jokaisen linkin omalle rivilleen */
 }
 
 .footer-nav a:hover {
-  color: #87ceeb; /* tekstin väri kun hiiri on napin päällä */
-  background: #000080; /* napin taustan värin kun hiiri päällä */
+  color: #87ceeb; /* Tekstin väri kun hiiri on napin päällä */
+  background: #000080; /* Napin taustan värin kun hiiri päällä */
 }
+
 /* Headerin valikon jutut */
 nav {
   display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
