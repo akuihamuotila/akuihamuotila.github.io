@@ -200,6 +200,15 @@ img {
   background: #000080; /* Napin taustan värin kun hiiri päällä */
 }
 
+/* Muokataan footer-osiota käyttämään flexboxia */
+footer {
+  display: flex; /* Asetetaan footer käyttämään flexboxia */
+  justify-content: space-between; /* Tasataan sisältö footerin sisällä */
+  align-items: center; /* Keskittää sisällön vertikaalisesti */
+  flex-wrap: wrap; /* Mahdollistaa sisällön käärittymisen tarvittaessa */
+  padding: 20px; /* Lisää paddingia footerin sisäpuolelle */
+}
+
 /* Headerin valikon jutut */
 nav {
   display: flex; /* Flexbox-malli, joka auttaa elementtien asettelussa */
