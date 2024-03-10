@@ -143,24 +143,24 @@ img {
   }
 }
 
-/* Footerin tyylit */
+/* Footerin yleiset tyylit */
 footer {
   display: flex;
-  flex-direction: column; /* Muutetaan asettelu pystysuunnaksi keskittämiseksi */
-  align-items: center; /* Keskittää alkiot vertikaalisesti */
-  justify-content: center; /* Keskittää sisällön */
+  flex-direction: row; /* Asettaa sisällön vaakasuuntaisesti */
+  align-items: start; /* Asettaa alkiot alkuun vertikaalisesti */
+  justify-content: flex-start; /* Asettaa sisällön vasemmalle */
   padding: 20px;
   background: #87ceeb; /* Taustaväri */
-  text-align: center; /* Tekstin sijainti keskelle */
-  width: 100%; /* Footerin leveys */
+  color: #000080; /* Tekstin väri */
 }
 
+/* Footerin navigointivalikko, nyt pystysuunnassa */
 .footer-nav {
   display: flex;
-  justify-content: center; /* Keskittää linkit */
-  flex-wrap: wrap; /* Mahdollistaa sisältöjen käärittymisen responsiivisesti */
+  flex-direction: column; /* Asettaa linkit pystysuuntaan */
+  align-items: flex-start; /* Asettaa linkit vasemmalle */
   padding: 0;
-  margin: 0;
+  margin-right: 20px; /* Lisää tilaa navin ja muun sisällön välille */
 }
 
 .footer-nav a {
@@ -168,7 +168,8 @@ footer {
   color: #000080;
   padding: 5px;
   outline: 2px solid #000080;
-  margin: 0 10px; /* Pienennetään marginaalia */
+  text-align: left; /* Tekstin tasaus vasemmalle */
+  margin: 5px 0; /* Lisää pientä tilaa linkkien välille */
 }
 
 .footer-nav a:hover {
