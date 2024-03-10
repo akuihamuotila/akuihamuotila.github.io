@@ -143,33 +143,46 @@ img {
   }
 }
 
-/* Footerin yleiset tyylit */
+/* Footerin säätö asettelua varten */
 footer {
   display: flex;
-  flex-direction: row; /* Asettaa sisällön vaakasuuntaisesti */
-  align-items: start; /* Asettaa alkiot alkuun vertikaalisesti */
-  justify-content: flex-start; /* Asettaa sisällön vasemmalle */
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #87ceeb;
+  color: #000080;
   padding: 20px;
-  background: #87ceeb; /* Taustaväri */
-  color: #000080; /* Tekstin väri */
 }
 
-/* Footerin navigointivalikko, nyt pystysuunnassa */
+/* Säädä .footer-valikko tarvittaessa */
+.footer-valikko {
+  display: flex;
+  width: 100%; /* Varmista, että se ottaa koko leveyden oikean asettelun saavuttamiseksi */
+  justify-content: flex-start; /* Asettelee lapset alkuun */
+  align-items: flex-start; /* Säätää pystysuoran asettelun */
+}
+
+/* Pidä .footer-nav sellaisenaan linkkien pystysuoraa pinontaa varten */
 .footer-nav {
   display: flex;
-  flex-direction: column; /* Asettaa linkit pystysuuntaan */
-  align-items: flex-start; /* Asettaa linkit vasemmalle */
+  flex-direction: column;
   padding: 0;
-  margin-right: 20px; /* Lisää tilaa navin ja muun sisällön välille */
+  margin-right: 20px; /* Lisää tilaa tämän ja muiden sisältöjen välille */
 }
 
 .footer-nav a {
   text-decoration: none;
   color: #000080;
   padding: 5px;
-  outline: 2px solid #000080;
-  text-align: left; /* Tekstin tasaus vasemmalle */
-  margin: 5px 0; /* Lisää pientä tilaa linkkien välille */
+  margin: 5px 0; /* Säädä linkkien välisen tilan mukaan tarvittaessa */
+}
+
+/* Säädä .footer-muu asettelun haluamallasi tavalla */
+.footer-muu {
+  display: flex;
+  flex-direction: column; /* Pitää sen sisäisen asettelun pystysuorana */
+  align-items: flex-start; /* Asettelee sisällön alkuun */
 }
 
 .footer-nav a:hover {
