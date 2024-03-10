@@ -36,6 +36,9 @@ header {
   padding: 20px; /* Sisäinen tyhjä tila */
   text-align: center; /* Tekstin tasaus keskelle */
   margin-bottom: 20px; /* Ulkoinen tyhjä tila alapuolella */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .content-grid {
@@ -49,6 +52,7 @@ header {
 @media (max-width: 600px) {
   .content-grid {
     grid-template-columns: 1fr; /* Yksi sarake mobiilinäkymässä */
+    flex-direction: column;
   }
 }
 
