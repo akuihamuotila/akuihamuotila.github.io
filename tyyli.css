@@ -17,11 +17,6 @@ nav {
   font-family: "Roboto", sans-serif; /* Kappalefontit ja valikkofontti */
 }
 
-footer {
-  margin: 0;
-  padding: 0;
-}
-
 .center img {
   display: block;
   margin-left: auto;
@@ -34,7 +29,6 @@ body {
   color: #000080; /* Tekstin väri */
   background-color: #ffffff; /* Taustan väri */
   padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
-  margin: 0; /* Ulkoinen tyhjä tila */
 }
 
 header {
@@ -45,30 +39,12 @@ header {
   margin-bottom: 20px; /* Ulkoinen tyhjä tila alapuolella */
 }
 
-.content {
-  padding: 20px; /* Sisäinen tyhjä tila */
-  background: #ffffff; /* Taustaväri */
-  margin: 20px 0; /* Ulkoinen tyhjä tila ylä- ja alapuolella */
-}
-
-.container {
-  max-width: 1100px; /* Maksimileveys */
-  margin: auto; /* Keskitetään automaattisesti */
-  overflow: hidden; /* Piilottaa ylittävän sisällön */
-}
-
 .content-grid {
   display: grid; /* Asetetaan tämä div-elementti käyttämään grid-asettelua */
   grid-template-columns: 1fr 1fr; /* Jaetaan tila kahteen yhtä suureen sarakkeeseen */
   gap: 20px; /* Asetetaan sarakkeiden väliin tilaa */
   max-width: 900px; /* Asetetaan maksimileveys koko gridille */
   margin: 0 auto; /* Keskittää gridin horisontaalisesti sivulle */
-}
-
-.left-column,
-.right-column {
-  padding: 20px; /* Asetetaan padding sarakkeille */
-  background: #ffffff; /* Taustaväri */
 }
 
 @media (max-width: 600px) {
@@ -97,7 +73,6 @@ header {
 
 button {
   padding: 10px 20px;
-  margin: 50px;
   background-color: #87ceeb;
   color: #000080;
   outline: 2px solid #000080;
@@ -112,83 +87,6 @@ button:hover {
 img {
   max-width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav a,
-  .fa {
-    display: block;
-    text-align: center;
-    margin: 10px 0;
-  }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .content-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Footerin säätö asettelua varten */
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  background: #87ceeb;
-  color: #000080;
-  padding: 20px;
-}
-
-/* Säädä .footer-valikko tarvittaessa */
-.footer-valikko {
-  display: flex;
-  width: 100%; /* Varmista, että se ottaa koko leveyden oikean asettelun saavuttamiseksi */
-  justify-content: flex-start; /* Asettelee lapset alkuun */
-  align-items: flex-start; /* Säätää pystysuoran asettelun */
-}
-
-/* Pidä .footer-nav sellaisenaan linkkien pystysuoraa pinontaa varten */
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin-right: 20px; /* Lisää tilaa tämän ja muiden sisältöjen välille */
-}
-
-.footer-nav a {
-  text-decoration: none;
-  color: #000080;
-  padding: 5px;
-  margin: 5px 0; /* Säädä linkkien välisen tilan mukaan tarvittaessa */
-}
-
-/* Säädä .footer-muu asettelun haluamallasi tavalla */
-.footer-muu {
-  display: flex;
-  flex-direction: column; /* Pitää sen sisäisen asettelun pystysuorana */
-  align-items: flex-start; /* Asettelee sisällön alkuun */
-}
-
-.footer-nav a:hover {
-  color: #87ceeb;
-  background: #000080;
 }
 
 nav {
@@ -214,4 +112,36 @@ nav a:hover {
 #valittu {
   background: #000080;
   color: #87ceeb;
+}
+
+/* Footerin säätö asettelua varten */
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background: #87ceeb;
+  color: #000080;
+  padding: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-right: 20px; /* Lisää tilaa tämän ja muiden sisältöjen välille */
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000080;
+  padding: 5px;
+  margin: 5px 0; /* Säädä linkkien välisen tilan mukaan tarvittaessa */
+}
+
+.footer-nav a:hover {
+  color: #87ceeb;
+  background: #000080;
 }
