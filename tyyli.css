@@ -147,8 +147,9 @@ img {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   background: #87ceeb;
   color: #000080;
