@@ -23,7 +23,6 @@ nav {
   margin-right: auto;
 }
 
-/* Kehon (body) perustyylit */
 body {
   line-height: 1.6; /* Rivivälin määrittely */
   color: #000080; /* Tekstin väri */
@@ -61,16 +60,19 @@ header {
   text-decoration: none;
 }
 
+/* Facebook logo */
 .fa-facebook {
   background: #3b5998;
   color: white;
 }
 
+/* Instagram logo */
 .fa-instagram {
   background: #125688;
   color: white;
 }
 
+/* Nappisäätöjä */
 button {
   padding: 10px 20px;
   background-color: #87ceeb;
@@ -89,9 +91,10 @@ img {
   height: auto;
 }
 
+/* Valikkosäätöjä */
 nav {
   display: flex;
-  justify-content: center; /* Tasaa linkit keskelle */
+  justify-content: center;
   background: #87ceeb;
   font-size: xx-large;
 }
@@ -114,7 +117,7 @@ nav a:hover {
   color: #87ceeb;
 }
 
-/* Footerin säätö asettelua varten */
+/* Footerin ja sen valikon säätöä */
 footer {
   display: flex;
   flex-direction: row;
@@ -131,14 +134,14 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-right: 20px; /* Lisää tilaa tämän ja muiden sisältöjen välille */
+  margin-right: 20px;
 }
 
 .footer-nav a {
   text-decoration: none;
   color: #000080;
   padding: 5px;
-  margin: 5px 0; /* Säädä linkkien välisen tilan mukaan tarvittaessa */
+  margin: 5px 0;
 }
 
 .footer-nav a:hover {
