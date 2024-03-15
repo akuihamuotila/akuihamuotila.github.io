@@ -144,13 +144,16 @@ footer {
   flex-direction: column;
   padding: 0;
   margin-right: 20px;
+  background: #87ceeb;
 }
 
 .footer-nav a {
+  color: #000080;
+  padding: 10px;
   text-decoration: none;
-  color: #87ceeb;
-  padding: 5px;
-  margin: 5px 0;
+  outline: 2px solid #000080;
+  margin: 6px;
+  text-align: center;
 }
 
 .footer-nav a:hover {
