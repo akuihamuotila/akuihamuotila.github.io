@@ -121,11 +121,6 @@ nav a:hover {
   color: #87ceeb;
 }
 
-.valittu {
-  background: #000080;
-  color: #87ceeb;
-}
-
 /* Footerin ja sen valikon säätöä */
 footer {
   display: flex;
@@ -159,4 +154,9 @@ footer {
 .footer-nav a:hover {
   color: #87ceeb;
   background: #000080;
+}
+
+.valittu {
+  background: #000080;
+  color: #87ceeb;
 }
