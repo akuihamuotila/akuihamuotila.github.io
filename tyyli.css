@@ -1,161 +1,186 @@
 /* Peruselementtien nollaus */
-h1,
-h2,
-h3,
-h4,
-h5,
+h1, /* Valitsee kaikki h1-elementit */
+h2, /* Valitsee kaikki h2-elementit */
+h3, /* Valitsee kaikki h3-elementit */
+h4, /* Valitsee kaikki h4-elementit */
+h5, /* Valitsee kaikki h5-elementit */
 h6 {
-  font-family: "Merriweather", sans-serif; /* Otsikkofontit */
+  /* Valitsee kaikki h6-elementit */
+  font-family: "Merriweather", sans-serif; /* Asettaa fontin otsikoille */
 }
 
 h3 {
+  /* Valitsee kaikki h3-elementit */
   font-size: xx-large; /* Suurentaa fontin kokoa */
 }
 
-p,
+p, /* Valitsee kaikki p-elementit */
 nav {
-  font-family: "Roboto", sans-serif; /* Kappalefontit ja valikkofontti */
+  /* Valitsee kaikki nav-elementit */
+  font-family: "Roboto", sans-serif; /* Asettaa fontin kappaleille ja navigaatiolle */
 }
 
 .center img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* Valitsee kuvat, jotka ovat keskitettyinä */
+  display: block; /* Asettaa kuvan block-elementiksi */
+  margin-left: auto; /* Asettaa vasemman marginaalin automaattiseksi */
+  margin-right: auto; /* Asettaa oikean marginaalin automaattiseksi */
 }
 
 body {
-  line-height: 1.6; /* Rivivälin määrittely */
-  color: #000080; /* Tekstin väri */
-  background-color: #ffffff; /* Taustan väri */
-  padding: 20px; /* Sisäinen tyhjä tila ympäri kehoa */
+  /* Valitsee body-elementin */
+  line-height: 1.6; /* Asettaa rivivälin */
+  color: #000080; /* Asettaa tekstin värin */
+  background-color: #ffffff; /* Asettaa taustavärin */
+  padding: 20px; /* Lisää pehmustetta body-elementin ympärille */
 }
 
 header {
-  background: #87ceeb; /* Taustaväri */
-  color: #000080; /* Tekstin väri */
-  padding: 20px; /* Sisäinen tyhjä tila */
-  text-align: center; /* Tekstin tasaus keskelle */
-  margin-bottom: 20px; /* Ulkoinen tyhjä tila alapuolella */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* Valitsee header-elementin */
+  background: #87ceeb; /* Asettaa taustavärin headerille */
+  color: #000080; /* Asettaa tekstin värin headerille */
+  padding: 20px; /* Lisää pehmustetta headerille */
+  text-align: center; /* Asettaa tekstin keskelle */
+  margin-bottom: 20px; /* Lisää alareunaan marginaalia */
+  display: flex; /* Käyttää flexbox-muotoilua */
+  flex-direction: column; /* Asettaa sarakkeiden suunnan pystyksi */
+  align-items: center; /* Asettaa sisällön vaakatasossa keskelle */
 }
 
 .content-grid {
-  display: grid; /* Asetetaan tämä div-elementti käyttämään grid-asettelua */
-  grid-template-columns: 1fr 1fr; /* Jaetaan tila kahteen yhtä suureen sarakkeeseen */
-  gap: 20px; /* Asetetaan sarakkeiden väliin tilaa */
-  max-width: 900px; /* Asetetaan maksimileveys koko gridille */
-  margin: 0 auto; /* Keskittää gridin horisontaalisesti sivulle */
+  /* Valitsee elementit, joilla on luokka 'content-grid' */
+  display: grid; /* Käynnistää grid-muotoilun */
+  grid-template-columns: 1fr 1fr; /* Jakaa sisällön kahteen yhtä suureen sarakkeeseen */
+  gap: 20px; /* Lisää tilaa sarakkeiden väliin */
+  max-width: 900px; /* Asettaa maksimileveyden gridille */
+  margin: 0 auto; /* Keskittää gridin horisontaalisesti */
 }
 
 @media (max-width: 600px) {
+  /* Media query näytöille, joiden leveys on enintään 600 pikseliä */
   .content-grid {
-    grid-template-columns: 1fr; /* Yksi sarake mobiilinäkymässä */
+    /* Valitsee elementit, joilla on luokka 'content-grid' */
+    grid-template-columns: 1fr; /* Vaihtaa yhden sarakkeen asettelun mobiilinäkymässä */
   }
 
   nav {
-    flex-direction: column; /* Asettaa linkit pinoon mobiilinäkymässä */
+    /* Valitsee nav-elementin */
+    flex-direction: column; /* Pinottaa navigointilinkit pystysuunnassa mobiilinäkymässä */
   }
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
+  /* Valitsee elementit, joilla on luokka 'fa' */
+  padding: 20px; /* Lisää pehmustetta */
+  font-size: 30px; /* Asettaa fontin koon */
+  width: 50px; /* Asettaa leveyden */
+  text-align: center; /* Asettaa tekstin keskelle */
+  text-decoration: none; /* Poistaa korostuksen linkeistä */
 }
 
-/* Facebook logo */
+/* Facebook-logo */
 .fa-facebook {
-  background: #3b5998;
-  color: white;
+  /* Valitsee elementit, joilla on luokka 'fa-facebook' */
+  background: #3b5998; /* Asettaa taustavärin */
+  color: white; /* Asettaa tekstin värin */
 }
 
-/* Instagram logo */
+/* Instagram-logo */
 .fa-instagram {
-  background: #125688;
-  color: white;
+  /* Valitsee elementit, joilla on luokka 'fa-instagram' */
+  background: #125688; /* Asettaa taustavärin */
+  color: white; /* Asettaa tekstin värin */
 }
 
-/* Nappisäätöjä */
+/* Napin tyylit */
 button {
-  padding: 10px 20px;
-  background-color: #87ceeb;
-  color: #000080;
-  outline: 2px solid #000080;
-  font-size: xx-large;
+  /* Valitsee button-elementit */
+  padding: 10px 20px; /* Lisää pehmustetta */
+  background-color: #87ceeb; /* Asettaa taustavärin */
+  color: #000080; /* Asettaa tekstin värin */
+  outline: 2px solid #000080; /* Asettaa ääriviivan */
+  font-size: xx-large; /* Asettaa fontin koon */
 }
 
 button:hover {
-  background-color: #000080;
-  color: #87ceeb;
+  /* Hover-tila button-elementeille */
+  background-color: #000080; /* Vaihtaa taustavärin hover-tilassa */
+  color: #87ceeb; /* Vaihtaa tekstin värin hover-tilassa */
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  /* Valitsee img-elementit */
+  max-width: 100%; /* Asettaa maksimileveyden 100 % */
+  height: auto; /* Säätää korkeuden automaattisesti */
 }
 
-/* Valikkosäätöjä */
+/* Navigaation tyylit */
 nav {
-  display: flex;
-  justify-content: center;
-  background: #87ceeb;
-  font-size: xx-large;
-  align-items: center;
+  /* Valitsee nav-elementit */
+  display: flex; /* Käyttää flexbox-muotoilua */
+  justify-content: center; /* Asettaa kohteiden vaakatasossa keskelle */
+  background: #87ceeb; /* Asettaa taustavärin */
+  font-size: xx-large; /* Asettaa fontin koon */
+  align-items: center; /* Asettaa kohteiden pystysuunnassa keskelle */
 }
 
 nav a {
-  color: #000080;
-  padding: 10px;
-  text-decoration: none;
-  outline: 2px solid #000080;
-  margin: 6px;
-  text-align: center;
+  /* Valitsee linkit nav-elementeissä */
+  color: #000080; /* Asettaa tekstin värin */
+  padding: 10px; /* Lisää pehmustetta */
+  text-decoration: none; /* Poistaa korostuksen linkeistä */
+  outline: 2px solid #000080; /* Asettaa ääriviivan */
+  margin: 6px; /* Lisää marginaalia */
+  text-align: center; /* Asettaa tekstin keskelle */
 }
 
 nav a:hover {
-  background: #000080;
-  color: #87ceeb;
+  /* Hover-tila linkeille nav-elementeissä */
+  background: #000080; /* Vaihtaa taustavärin hover-tilassa */
+  color: #87ceeb; /* Vaihtaa tekstin värin hover-tilassa */
 }
 
-/* Footerin ja sen valikon säätöä */
+/* Alatunnisteen tyylit */
 footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  background: #87ceeb;
-  color: #000080;
-  padding: 20px;
+  /* Valitsee footer-elementin */
+  display: flex; /* Käyttää flexbox-muotoilua */
+  flex-direction: row; /* Asettaa kohteiden suunnan vaakasuoraksi */
+  align-items: center; /* Asettaa kohteiden pystysuunnassa keskelle */
+  justify-content: center; /* Asettaa kohteiden vaakatasossa keskelle */
+  text-align: center; /* Asettaa tekstin keskelle */
+  flex-wrap: wrap; /* Sallii kohteiden siirtymisen seuraavalle riville */
+  background: #87ceeb; /* Asettaa taustavärin */
+  color: #000080; /* Asettaa tekstin värin */
+  padding: 20px; /* Lisää pehmustetta */
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin-right: 20px;
-  background: #87ceeb;
+  /* Valitsee elementit, joilla on luokka 'footer-nav' */
+  display: flex; /* Käyttää flexbox-muotoilua */
+  flex-direction: column; /* Asettaa kohteiden suunnan pystysuoraksi */
+  padding: 0; /* Nollaa pehmusteen */
+  margin-right: 20px; /* Lisää oikeanpuoleista marginaalia */
+  background: #87ceeb; /* Asettaa taustavärin */
 }
 
 .footer-nav a {
-  padding: 10px;
-  text-decoration: none;
-  outline: 2px solid #000080;
-  margin: 6px;
-  text-align: center;
+  /* Valitsee linkit elementeissä, joilla on luokka 'footer-nav' */
+  padding: 10px; /* Lisää pehmustetta */
+  text-decoration: none; /* Poistaa korostuksen linkeistä */
+  outline: 2px solid #000080; /* Asettaa ääriviivan */
+  margin: 6px; /* Lisää marginaalia */
+  text-align: center; /* Asettaa tekstin keskelle */
 }
 
 .footer-nav a:hover {
-  color: #87ceeb;
-  background: #000080;
+  /* Hover-tila linkeille elementeissä, joilla on luokka 'footer-nav' */
+  color: #87ceeb; /* Vaihtaa tekstin värin hover-tilassa */
+  background: #000080; /* Vaihtaa taustavärin hover-tilassa */
 }
 
+/* Valitun kohteen tyyli */
 .valittu {
-  background: #000080;
-  color: #87ceeb;
+  /* Valitsee elementit, joilla on luokka 'valittu' */
+  background: #000080; /* Asettaa taustavärin */
+  color: #87ceeb; /* Asettaa tekstin värin */
 }

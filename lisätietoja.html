@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+<!-- HTML5:n määrittely -->
 <html lang="en">
+  <!-- Sivun kielen määrittely (englanti) -->
   <head>
+    <!-- Sivun ylätunniste -->
     <meta charset="UTF-8" />
+    <!-- Määritellään merkistökoodaus (UTF-8) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Määritellään näkymän asetukset mobiililaitteille -->
     <meta name="robots" content="noindex" />
+    <!-- Estetään hakukoneita indeksoimasta sivua -->
     <!-- Hakukoneoptimoinnin poisto -->
     <meta name="googlebot" content="noindex" />
+    <!-- Estetään Google-botia indeksoimasta sivua -->
     <!-- Hakukoneoptimoinnin poisto -->
     <link
       rel="preload"
@@ -13,7 +20,9 @@
       as="style"
       onload="this.rel='stylesheet'"
     />
+    <!-- Ennakkoladataan tyyli.css-tiedosto, joka ladataan asynkronisesti -->
     <noscript><link rel="stylesheet" href="tyyli.css" /></noscript>
+    <!-- Varajärjestely JavaScriptin ollessa poissa käytöstä -->
     <!-- Käyttää css tiedostoa, ladataan asynkronisesti -->
     <link
       rel="preload"
@@ -21,80 +30,104 @@
       as="style"
       onload="this.rel='stylesheet'"
     />
+    <!-- Ennakkoladataan Font Awesome -ikonit, jotka ladataan asynkronisesti -->
     <noscript
       ><link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /></noscript>
-    <!-- Käytää appi-ikoneja, ladataan asynkronisesti -->
+    <!-- Varajärjestely JavaScriptin ollessa poissa käytöstä -->
 
     <title>HelppoPhone - Osta omasi tänään!</title>
+    <!-- Sivun otsikko -->
   </head>
   <body>
+    <!-- Sivun pääsisältö -->
     <div class="center">
+      <!-- Sisällön keskitys -->
       <a href="index.html">
+        <!-- Linkki etusivulle -->
         <img
           loading="lazy"
           src="https://github.com/akuihamuotila/akuihamuotila.github.io/blob/main/sivuston%20logo.png?raw=true"
           alt="HelppoPhone logo. Se kuvastaa yksinkertaista älypuhelinta."
         />
+        <!-- Sivuston logo -->
       </a>
     </div>
     <header>
+      <!-- Sivun ylänavigaatio -->
       <h3>HelppoPhone</h3>
+      <!-- Sivun otsikko -->
       <nav>
+        <!-- Navigointivalikko -->
         <a href="index.html">Etusivu</a>
+        <!-- Linkki etusivulle -->
         <a href="kauppa.html">Kauppa</a>
+        <!-- Linkki kauppasivulle -->
         <a href="lisätietoja.html" class="valittu">Lisätietoja</a>
+        <!-- Linkki lisätietosivulle (valittu) -->
         <a href="yhteystiedot.html">Yhteystiedot</a>
+        <!-- Linkki yhteystietosivulle -->
       </nav>
     </header>
 
     <div class="content-grid">
+      <!-- Sisällön ruudukko -->
       <div class="left-column">
+        <!-- Vasen sarakkeisto -->
         <h1>Yrityksen Tarina</h1>
-
+        <!-- Otsikko -->
         <p>
-          Miten koko yritys lähti käyntiin...Nulla et pariatur reprehenderit
-          consectetur anim aute. Ex dolore aute reprehenderit dolor mollit eu
-          fugiat id mollit non culpa ex ad excepteur. Anim laboris amet culpa
-          proident proident. Mollit laboris nostrud velit esse laboris anim
-          labore minim ullamco proident veniam do. Nulla ea aliquip aute amet
-          non occaecat nostrud laborum culpa incididunt do. Proident veniam
-          nulla culpa ipsum enim. Dolor sint consectetur cupidatat consequat eu
-          commodo aliquip qui amet incididunt commodo duis.
+          <!-- Kappale -->
+          Miten koko yritys lähti käyntiin...
+          <!-- Sisältöteksti -->
         </p>
       </div>
       <div class="right-column">
+        <!-- Oikea sarakkeisto -->
         <h2><br />& Tarkoitus</h2>
-
+        <!-- Otsikko -->
         <p>
-          Päätavoitteet... Irure sunt sunt qui id esse sit id amet reprehenderit
-          deserunt voluptate deserunt. Dolor cupidatat cupidatat velit aliqua
-          laborum sit deserunt aute. Ullamco ea Lorem est qui duis tempor sint
-          enim. Ullamco irure ipsum laborum velit do dolore nostrud labore
-          nostrud laboris aliqua. Irure eu sit labore Lorem.
+          <!-- Kappale -->
+          Päätavoitteet...
+          <!-- Sisältöteksti -->
         </p>
       </div>
     </div>
 
     <footer>
+      <!-- Sivun alatunniste -->
       <nav class="footer-nav">
+        <!-- Alatunnisteen navigaatio -->
         <a href="index.html">Etusivu</a>
+        <!-- Linkki etusivulle -->
         <a href="kauppa.html">Kauppa</a>
+        <!-- Linkki kauppasivulle -->
         <a href="lisätietoja.html" class="valittu">Lisätietoja</a>
+        <!-- Linkki lisätietosivulle (valittu) -->
         <a href="yhteystiedot.html">Yhteystiedot</a>
+        <!-- Linkki yhteystietosivulle -->
       </nav>
 
       <p>
+        <!-- Kappale -->
         Ota yhteyttä! <br />
+        <!-- Teksti, joka kehottaa ottamaan yhteyttä -->
         Seuraa meitä Facebookissa ja Instagramissa: <br />
+        <!-- Teksti, joka kehottaa seuraamaan sosiaalisessa mediassa -->
         <a href="#" class="fa fa-facebook"></a>
+        <!-- Facebook-ikonin linkki -->
         <a href="#" class="fa fa-instagram"></a>
+        <!-- Instagram-ikonin linkki -->
         <br />
+        <!-- Riviväli -->
         <br />
+        <!-- Riviväli -->
         <br />
+        <!-- Riviväli -->
         &copy; 2024, HelppoPhone
+        <!-- Tekijänoikeustiedot -->
       </p>
     </footer>
 
@@ -103,11 +136,12 @@
       window.onload = function () {
         const preloadLinks = document.querySelectorAll(
           'link[rel="preload"][as="style"]'
-        );
+        ); // Haetaan kaikki ennakkoladatut tyylit
         preloadLinks.forEach((link) => {
           link.rel = "stylesheet";
-        });
+        }); // Vaihdetaan ennakkoladatut tyylit latautuneiksi
       };
     </script>
+    <!-- JavaScriptin osa, joka vaihtaa ennakkoladatut tyylit ladatuiksi, kun sivu on ladattu -->
   </body>
 </html>

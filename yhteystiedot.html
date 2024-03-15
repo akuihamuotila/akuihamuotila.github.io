@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+<!-- HTML5 doctype-määrittely -->
 <html lang="en">
+  <!-- HTML-kielen määrittely (englanti) -->
   <head>
+    <!-- Sivun päätunniste -->
     <meta charset="UTF-8" />
+    <!-- Merkistökoodauksen määrittely (UTF-8) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Näkymän skaalauksen määrittely mobiililaitteille -->
     <meta name="robots" content="noindex" />
+    <!-- Hakukoneiden indeksoinnin estäminen -->
     <!-- Hakukoneoptimoinnin poisto -->
     <meta name="googlebot" content="noindex" />
+    <!-- Google-botin indeksoinnin estäminen -->
     <!-- Hakukoneoptimoinnin poisto -->
     <link
       rel="preload"
@@ -13,81 +20,122 @@
       as="style"
       onload="this.rel='stylesheet'"
     />
+    <!-- Tyylien ennakkolataus -->
     <noscript><link rel="stylesheet" href="tyyli.css" /></noscript>
-    <!-- Käyttää css tiedostoa, ladataan asynkronisesti -->
+    <!-- Varajärjestely JavaScriptin ollessa poissa käytöstä -->
+    <!-- CSS-tiedoston käyttö, ladataan asynkronisesti -->
     <link
       rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       as="style"
       onload="this.rel='stylesheet'"
     />
+    <!-- Font Awesome -ikonien ennakkolataus -->
     <noscript
       ><link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     /></noscript>
-    <!-- Käytää appi-ikoneja, ladataan asynkronisesti -->
+    <!-- Varajärjestely JavaScriptin ollessa poissa käytöstä -->
+    <!-- Appi-ikoneiden käyttö, ladataan asynkronisesti -->
 
     <title>HelppoPhone - Osta omasi tänään!</title>
+    <!-- Sivun otsikko -->
   </head>
   <body>
+    <!-- Sivun pääsisältö -->
     <div class="center">
+      <!-- Sisällön keskitys -->
       <a href="index.html">
+        <!-- Linkki etusivulle -->
         <img
           loading="lazy"
           src="https://github.com/akuihamuotila/akuihamuotila.github.io/blob/main/sivuston%20logo.png?raw=true"
           alt="HelppoPhone logo. Se kuvastaa yksinkertaista älypuhelinta."
         />
+        <!-- Sivuston logo -->
       </a>
     </div>
     <header>
+      <!-- Sivun ylänavigaatio -->
       <h3>HelppoPhone</h3>
+      <!-- Sivun otsikko -->
       <nav>
+        <!-- Navigointivalikko -->
         <a href="index.html">Etusivu</a>
+        <!-- Linkki etusivulle -->
         <a href="kauppa.html">Kauppa</a>
+        <!-- Linkki kauppasivulle -->
         <a href="lisätietoja.html">Lisätietoja</a>
+        <!-- Linkki lisätietosivulle -->
         <a href="yhteystiedot.html" class="valittu">Yhteystiedot</a>
+        <!-- Linkki yhteystietosivulle (valittu) -->
       </nav>
     </header>
 
     <div class="content-grid">
+      <!-- Sisällön ruudukko -->
       <div class="left-column">
+        <!-- Vasen sarakkeisto -->
         <p>
+          <!-- Kappale -->
           <a href="kauppa.html">
+            <!-- Linkki kauppasivulle -->
             <img
               loading="lazy"
               src="https://github.com/akuihamuotila/akuihamuotila.github.io/raw/main/3e170cc2-ad96-45b1-9d60-d0104f00ed80.jfif"
               alt="Tässä on kuva myynnissä olevasta älypuhelimesta, HelppoPhonesta. Se on harmaa, moderni ja yksinkertainen."
             />
+            <!-- Kuva myynnissä olevasta älypuhelimesta -->
           </a>
         </p>
       </div>
       <div class="right-column">
+        <!-- Oikea sarakkeisto -->
         <h1>Ota meihin yhteyttä!</h1>
+        <!-- Otsikko -->
         <p>
+          <!-- Kappale -->
           Jos sinulla on mitään kysyttävää, älä pelkää olla yhteydessä!<br />
+          <!-- Teksti -->
           +358 50 123 4567<br />
+          <!-- Puhelinnumero -->
           asiakaspalvelu@helppophone.fi<br />
+          <!-- Sähköpostiosoite -->
           Mukavaa päivänjatkoa!<br />
+          <!-- Hyvästelyteksti -->
         </p>
       </div>
     </div>
 
     <footer>
+      <!-- Sivun alatunniste -->
       <nav class="footer-nav">
+        <!-- Alatunnisteen navigaatio -->
         <a href="index.html">Etusivu</a>
+        <!-- Linkki etusivulle -->
         <a href="kauppa.html">Kauppa</a>
+        <!-- Linkki kauppasivulle -->
         <a href="lisätietoja.html">Lisätietoja</a>
+        <!-- Linkki lisätietosivulle -->
         <a href="yhteystiedot.html" class="valittu">Yhteystiedot</a>
+        <!-- Linkki yhteystietosivulle (valittu) -->
       </nav>
 
       <p>
+        <!-- Kappale -->
         Ota yhteyttä! <br />
+        <!-- Teksti -->
         Seuraa meitä Facebookissa ja Instagramissa: <br />
+        <!-- Teksti -->
         <a href="#" class="fa fa-facebook"></a>
+        <!-- Facebook-ikonin linkki -->
         <a href="#" class="fa fa-instagram"></a>
+        <!-- Instagram-ikonin linkki -->
         <br />
+        <!-- Riviväli -->
         &copy; 2024, HelppoPhone
+        <!-- Tekijänoikeustiedot -->
       </p>
     </footer>
 
@@ -96,11 +144,12 @@
       window.onload = function () {
         const preloadLinks = document.querySelectorAll(
           'link[rel="preload"][as="style"]'
-        );
+        ); // Haetaan kaikki ennakkoladatut tyylit
         preloadLinks.forEach((link) => {
           link.rel = "stylesheet";
-        });
+        }); // Vaihdetaan ennakkoladatut tyylit latautuneiksi
       };
     </script>
+    <!-- JavaScriptin osa, joka vaihtaa ennakkoladatut tyylit ladatuiksi, kun sivu on ladattu -->
   </body>
 </html>
